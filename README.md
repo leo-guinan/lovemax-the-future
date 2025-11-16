@@ -16,13 +16,24 @@ Then, run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+## Building for Production
+
+```bash
+npm run build
+```
+
+This creates a `dist/` folder with static files ready to deploy.
 
 ## Project Structure
 
-- `app/` - Next.js app directory with pages and layouts
-- `components/` - React components for each section
-- `app/globals.css` - Global styles and Tailwind CSS configuration
+- `src/` - Source files
+  - `components/` - React components for each section
+  - `App.tsx` - Main app component
+  - `main.tsx` - Entry point
+  - `index.css` - Global styles and Tailwind CSS configuration
+- `index.html` - HTML entry point
 
 ## Sections
 
@@ -37,8 +48,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Tech Stack
 
-- Next.js 14
+- Vite - Fast build tool for static sites
 - React 18
 - TypeScript
 - Tailwind CSS
+
+## Deployment
+
+The project is configured to deploy to GitHub Pages automatically via GitHub Actions. Just push to the `main` branch and it will build and deploy.
 

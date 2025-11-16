@@ -1,5 +1,3 @@
-'use client'
-
 export default function CounterfactualLoopSection() {
   const steps = [
     'Predict',
