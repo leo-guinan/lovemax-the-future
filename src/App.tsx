@@ -1,9 +1,10 @@
 import HeroSection from './components/HeroSection'
-import WhatDoesItMeanSection from './components/WhatDoesItMeanSection'
-import LoveFormulaSection from './components/LoveFormulaSection'
-import CounterfactualLoopSection from './components/CounterfactualLoopSection'
+import ThePastSection from './components/ThePastSection'
+import TheFutureSection from './components/TheFutureSection'
+import LoveLoopSection from './components/LoveLoopSection'
+import WhyStoriesChangeSection from './components/WhyStoriesChangeSection'
 import LoveOpsSection from './components/LoveOpsSection'
-import WhyThisMattersSection from './components/WhyThisMattersSection'
+import CounterfactualEngineSection from './components/CounterfactualEngineSection'
 import JoinStewardsSection from './components/JoinStewardsSection'
 import Footer from './components/Footer'
 
@@ -11,11 +12,12 @@ function App() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <WhatDoesItMeanSection />
-      <LoveFormulaSection />
-      <CounterfactualLoopSection />
+      <ThePastSection />
+      <TheFutureSection />
+      <LoveLoopSection />
+      <WhyStoriesChangeSection />
       <LoveOpsSection />
-      <WhyThisMattersSection />
+      <CounterfactualEngineSection />
       <JoinStewardsSection />
       <Footer />
     </main>

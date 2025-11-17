@@ -1,22 +1,23 @@
-export default function CounterfactualLoopSection() {
+export default function LoveLoopSection() {
   const steps = [
-    'Predict',
-    'Intervene',
-    'Verify',
-    'Mint LOVE',
-    'Fund more care',
-    'Improve coherence'
+    'Predict default outcome',
+    'Human intervenes',
+    'Small cluster verifies improvement',
+    'LOVE is minted',
+    'LOVE funds more care',
+    'Coherence increases',
+    'The next date, the next conversation, the next moment improves'
   ]
 
   return (
     <section className="py-32 px-6 bg-black">
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
-          🚀 The Counterfactual Loop
+          🔄 The LOVE Loop
         </h2>
 
         {/* Circular diagram */}
-        <div className="relative w-full max-w-2xl mx-auto aspect-square">
+        <div className="relative w-full max-w-2xl mx-auto aspect-square mb-16">
           <svg className="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <marker
@@ -67,7 +68,7 @@ export default function CounterfactualLoopSection() {
                   <circle
                     cx={x}
                     cy={y}
-                    r="35"
+                    r="38"
                     fill="rgba(255, 23, 68, 0.15)"
                     stroke="#FF1744"
                     strokeWidth="2"
@@ -80,12 +81,12 @@ export default function CounterfactualLoopSection() {
                     textAnchor="middle"
                     dominantBaseline="middle"
                     fill="white"
-                    fontSize="11"
+                    fontSize="10"
                     fontWeight="600"
                     fontFamily="system-ui, -apple-system, sans-serif"
                   >
                     {step.split(' ').map((word, i) => (
-                      <tspan key={i} x={x} dy={i === 0 ? -6 : 12}>
+                      <tspan key={i} x={x} dy={i === 0 ? -8 : 12}>
                         {word}
                       </tspan>
                     ))}
@@ -109,7 +110,7 @@ export default function CounterfactualLoopSection() {
               textAnchor="middle"
               dominantBaseline="middle"
               fill="white"
-              fontSize="16"
+              fontSize="14"
               fontWeight="bold"
               fontFamily="system-ui, -apple-system, sans-serif"
             >
@@ -119,8 +120,8 @@ export default function CounterfactualLoopSection() {
         </div>
 
         {/* Caption */}
-        <p className="text-center text-xl md:text-2xl text-gray-300 mt-16 max-w-2xl mx-auto">
-          A regenerative, positive-sum system for human futures.
+        <p className="text-center text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto">
+          This is the regeneration engine of emotional trust.
         </p>
       </div>
     </section>
